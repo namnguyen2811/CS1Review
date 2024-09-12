@@ -34,12 +34,14 @@ public class JavaBeansAndBytes {
 
         // TODO
         // Update the year founded and print the new yearFounded in a sentence
+        yearFounded = 1996;
+        System.out.println("We were founded in " + yearFounded + ".");
 
         // Calling methods
         randomDiscount();
         // TODO
         // Add parameter to specialOfTheDay (drink of your choice)
-        specialOfTheDay();
+        specialOfTheDay("hot chocolate");
         countCups();
         baristasChoice();
 
@@ -57,13 +59,16 @@ public class JavaBeansAndBytes {
         // TODO
         // Make this method generate a random integer discount (0-30%)
         // and print the result.
+        int discount = (int)(Math.random()*31);
+        System.out.println("The discount is " + discount + "%");
     }
 
     // Method with a parameter for the special of the day
-    public void specialOfTheDay() {
+    public void specialOfTheDay(String special) {
         // TODO
         // Make this method accept a parameter representing the day’s special.
         // Print the day's special.
+        System.out.println("Today's special is "+special);
     }
 
     // Method to show loops
@@ -74,13 +79,19 @@ public class JavaBeansAndBytes {
         // Write three different for loops that print the indicated numbers:
 
         // Print 1 to 5
-
+        for(int n=1; n<6; n++){
+            System.out.print(n+"\n");
+        }
 
         // Print 2, 5, 8, 11
-
+        for(int m=2; m<12; m=m+3){
+            System.out.print(m+"\n");
+        }
 
         // Print 8 to 0
-
+        for(int p=8; p>-1; p=p-1){
+            System.out.print(p+"\n");
+        }
     }
 
     // Method to recommend a coffee based on a random number
@@ -88,6 +99,7 @@ public class JavaBeansAndBytes {
         // TODO
         // Make this method generate a random decimal between 0 and 1
         // and print one of four drink recommendations based on its value.
+
     }
 }
 
