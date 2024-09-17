@@ -47,9 +47,13 @@ public class JavaBeansAndBytes {
 
         // TODO
         // Create two CoffeeDrink objects
+        CoffeeDrink drink1 = new CoffeeDrink ("Espresso");
+        CoffeeDrink drink2 = new CoffeeDrink("Latte");
 
         // TODO
         // Print out the order details
+        System.out.println("Order 1: "+drink1 + "!");
+        System.out.println("Order 2: "+drink2 + "!");
 
 
     }
@@ -99,6 +103,19 @@ public class JavaBeansAndBytes {
         // TODO
         // Make this method generate a random decimal between 0 and 1
         // and print one of four drink recommendations based on its value.
+        double random = Math.random();
+        if(random < 0.25){
+            System.out.println("Barista's choice: Cappucino");
+        }
+        else if (random < 0.5){
+            System.out.println("Barista's choice: Pumpkin Latte");
+        }
+        else if (random < 0.75){
+            System.out.println("Barista's choice: Matcha Latte");
+        }
+        else {
+            System.out.println("Barista's choice: Americano");
+        }
 
     }
 }
