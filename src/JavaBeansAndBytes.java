@@ -1,5 +1,3 @@
-import java.util.Random;
-
 /**
  * CS2 Review Assignment!
  * Do NOT use ChatGPT or any other generative AI to assist you with this assignment
@@ -47,15 +45,13 @@ public class JavaBeansAndBytes {
 
         // TODO
         // Create two CoffeeDrink objects
-        CoffeeDrink drink1 = new CoffeeDrink ("Espresso");
-        CoffeeDrink drink2 = new CoffeeDrink("Latte");
+        Drink drink1 = new Drink(1, "Espresso", true);
+        Drink drink2 = new Drink(2, "Americano", false);
 
         // TODO
         // Print out the order details
-        System.out.println("Order 1: "+drink1 + "!");
-        System.out.println("Order 2: "+drink2 + "!");
-
-
+        drink1.printInfo();
+        drink2.printInfo();
     }
 
     // Method to generate a random discount
@@ -105,7 +101,7 @@ public class JavaBeansAndBytes {
         // and print one of four drink recommendations based on its value.
         double random = Math.random();
         if(random < 0.25){
-            System.out.println("Barista's choice: Cappucino");
+            System.out.println("Barista's choice: Cappuccino");
         }
         else if (random < 0.5){
             System.out.println("Barista's choice: Pumpkin Latte");
